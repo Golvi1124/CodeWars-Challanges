@@ -1,0 +1,20 @@
+using System;
+using System.Text;
+​
+public static class Kata
+{
+    public static string CountSheep(int n)
+    {
+        if (n == 0) return "";
+        
+        StringBuilder result = new StringBuilder();
+​
+        for (int i = 1; i <= n; i++)
+        {
+            result.Append($"{i} sheep...");
+        }
+​
+        return result.ToString();
+    }
+}
+​
