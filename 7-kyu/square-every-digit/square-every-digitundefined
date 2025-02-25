@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+​
+public class Kata
+{
+    public static int SquareDigits(int n)
+    {
+        string result = "";
+​
+        foreach (var digit in n.ToString()) 
+        {
+            int num = int.Parse(digit.ToString());
+            result += (num * num).ToString();
+        }
+​
+        return int.Parse(result);
+    }
+}
+​
