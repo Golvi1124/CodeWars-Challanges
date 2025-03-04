@@ -1,0 +1,17 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+​
+public class DnaStrand 
+{
+    public static string MakeComplement(string dna)
+    {
+        var complementMap = new Dictionary<char, char> 
+        {
+            { 'A', 'T' }, { 'T', 'A' }, { 'C', 'G' }, { 'G', 'C' }
+        };
+​
+        return new string(dna.Select(c => complementMap[c]).ToArray());
+    }
+}
+​
