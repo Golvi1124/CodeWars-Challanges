@@ -1,0 +1,17 @@
+using System;
+​
+public class Kata
+{
+  public static int SumMix(object[] x)
+  {
+    int sum = 0;
+    
+    foreach (var num in x)
+      {
+      
+        int y = Convert.ToInt32(num);
+        sum += y;
+    }
+    return sum;
+  }
+}
