@@ -1,0 +1,13 @@
+public class Kata
+{
+  // Write a static function "Square" here which takes a double
+   public static double Square(double x)
+    {
+    double result = x * x;
+    return result;
+  }
+  
+  // and returns the square of that double
+    
+    
+}
