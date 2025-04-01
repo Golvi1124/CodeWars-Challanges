@@ -1,0 +1,11 @@
+using System;
+using System.Linq;
+​
+public static class Kata
+{
+  public static string boolToWord(bool word)
+  {
+    string result = (word == true) ? "Yes" : "No";
+    return result;
+  }
+}
